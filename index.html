@@ -12,14 +12,20 @@
 
   <body>
     <!-- Navbar -->
-    <header>
+    <header class="site-header">
       <nav class="navbar">
-        <a href="index.html" class="logo"> BlogHub </a>
+        <a href="index.html" class="logo">
+          <span class="logo-box">B</span>
+          <span class="logo-text">BlogHub</span>
+        </a>
 
         <div class="nav-links">
-          <a href="index.html">Home</a>
+          <a href="index.html" class="active">Home</a>
           <a href="explore.html">Explore</a>
-          <a href="login.html">Login</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="login.html" class="login-btn">Login</a>
           <a href="register.html" class="register-btn">Register</a>
         </div>
       </nav>
@@ -32,88 +38,224 @@
           <h1>Stories worth sharing.</h1>
 
           <p>
-            Discover personal experiences, inspiring journeys, and stories from
-            people around the world.
+            BlogHub is a place to share personal experiences, life lessons,
+            reflections, and meaningful stories.
           </p>
 
-          <a href="explore.html" class="primary-btn"> Explore Stories </a>
+          <form class="hero-search">
+            <input
+              type="text"
+              placeholder="Search stories, authors, topics..."
+            />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+
+        <div class="hero-image">
+          <img src="images/hero/hero.jpg" alt="Mountain landscape" />
         </div>
       </section>
 
+     
       <!-- Featured Stories -->
-      <section class="featured">
-        <div class="section-header">
-          <h2>Featured Stories</h2>
-          <a href="explore.html">View all</a>
+    <section class="featured-section">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">✦ CURATED FOR YOU</span>
+                <h2>Featured Stories</h2>
+            </div>
+
+            <a href="explore.html">View all stories →</a>
+
         </div>
+
 
         <div class="story-grid">
-          <article class="story-card">
-            <div class="story-image"></div>
 
-            <div class="story-content">
-              <span class="category">Travel</span>
+            <article class="story-card">
 
-              <h3>A Journey Through the Mountains</h3>
+                <img
+                src="images/stories/story1.jpg"
+                alt="Mountain story"
+            >
 
-              <p>
-                A story about discovering new places, meeting new people and
-                enjoying the journey.
-              </p>
+                <div class="story-content">
 
-              <div class="story-info">
-                <span>By Alex</span>
-                <span>August 20, 2026</span>
-              </div>
-            </div>
-          </article>
+                    <span class="story-category">Travel</span>
 
-          <article class="story-card">
-            <div class="story-image"></div>
+                    <h3>
+                    The Road Less Traveled: My Solo Trek Through Nepal
+                 </h3>
 
-            <div class="story-content">
-              <span class="category">Life</span>
+                    <p>
+                    Sometimes the best stories begin with an unexpected journey.
+                    </p>
 
-              <h3>Learning to Start Again</h3>
+                    <a href="story.html" class="read-link">
+                    Read →
+                    </a>
 
-              <p>
-                Sometimes starting over is exactly what we need to discover
-                something better.
-              </p>
+                </div>
 
-              <div class="story-info">
-                <span>By Maya</span>
-                <span>August 18, 2026</span>
-              </div>
-            </div>
-          </article>
+         </article>
 
-          <article class="story-card">
-            <div class="story-image"></div>
 
-            <div class="story-content">
-              <span class="category">Inspiration</span>
+            <article class="story-card">
 
-              <h3>The Small Things That Matter</h3>
+                <img
+                src="images/stories/story2.jpg"
+                alt="Life lessons story" >
 
-              <p>
-                A reminder that meaningful moments often come from the simplest
-                parts of life.
-              </p>
+                <div class="story-content">
 
-              <div class="story-info">
-                <span>By Sam</span>
-                <span>August 15, 2026</span>
-              </div>
-            </div>
-          </article>
+                    <span class="story-category">Life Lessons</span>
+
+                    <h3>
+                    What Losing My Job Taught Me About Life
+                    </h3>
+
+                    <p>
+                    What felt like an ending eventually became a new beginning.
+                    </p>
+
+                    <a href="story.html" class="read-link">
+                    Read →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="story-card">
+
+                <img
+                src="images/stories/story3.jpg"
+                alt="Food story"
+            >
+
+                <div class="story-content">
+
+                    <span class="story-category">Food & Culture</span>
+
+                    <h3>
+                    Finding Peace in a Bowl of Mom's Dal Bhat
+                    </h3>
+
+                    <p>
+                    Some of our strongest memories are connected to simple food.
+                    </p>
+
+                    <a href="story.html" class="read-link">
+                    Read →
+                 </a>
+
+                </div>
+
+            </article>
+
         </div>
-      </section>
-    </main>
 
+    </section>
+    <!-- Story Categories -->
+    <section class="categories-section">
+      <div class="section-label">✦ BROWSE BY TOPIC</div>
+
+      <h2>Story Categories</h2>
+
+      <div class="categories-wrapper">
+        <a href="explore.html?category=travel" class="category-card">
+          <div class="category-icon">✈️</div>
+          <h3>Travel</h3>
+          <p>248 stories</p>
+        </a>
+
+        <a href="explore.html?category=life-lessons" class="category-card">
+          <div class="category-icon">💡</div>
+          <h3>Life Lessons</h3>
+          <p>412 stories</p>
+        </a>
+
+        <a href="explore.html?category=food-culture" class="category-card">
+          <div class="category-icon">🍜</div>
+          <h3>Food & Culture</h3>
+          <p>186 stories</p>
+        </a>
+
+        <a href="explore.html?category=health" class="category-card">
+          <div class="category-icon">🌿</div>
+          <h3>Health</h3>
+          <p>203 stories</p>
+        </a>
+
+        <a href="explore.html?category=career" class="category-card">
+          <div class="category-icon">💼</div>
+          <h3>Career</h3>
+          <p>159 stories</p>
+        </a>
+
+        <a href="explore.html?category=motivation" class="category-card">
+          <div class="category-icon">🔥</div>
+          <h3>Motivation</h3>
+          <p>334 stories</p>
+        </a>
+      </div>
+    </section>
     <!-- Footer -->
-    <footer>
-      <p>&copy; 2026 BlogHub. All rights reserved.</p>
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-box">B</span>
+            <span>BlogHub</span>
+          </div>
+
+          <p>
+            A platform where everyday people share personal experiences, life
+            lessons, and stories that matter.
+          </p>
+
+          <div class="social-links">
+            <a href="#">F</a>
+            <a href="#">T</a>
+            <a href="#">I</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>EXPLORE</h4>
+
+          <a href="#">Featured Stories</a>
+          <a href="#categories">Categories</a>
+          <a href="#">Authors</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>COMPANY</h4>
+
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>SUPPORT</h4>
+
+          <a href="#">Help Center</a>
+          <a href="#">Write for Us</a>
+          <a href="#">Advertise</a>
+          <a href="#">Community</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 BlogHub. Built with PHP & MySQL · BCA 4th Semester Project</p>
+
+        <p>Made with care</p>
+      </div>
     </footer>
   </body>
 </html>
