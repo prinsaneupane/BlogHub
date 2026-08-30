@@ -6,206 +6,48 @@
 
     <title>BlogHub</title>
 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/stylesheet.css" />
-    <link rel="stylesheet" href="css/home.css" />
   </head>
 
   <body>
     <!-- Navbar -->
     <header class="site-header">
-      <nav class="navbar">
-        <a href="index.html" class="logo">
-          <span class="logo-box">B</span>
-          <span class="logo-text">BlogHub</span>
+      <nav
+        class="navbar flex items-center justify-between px-6 md:px-12 lg:px-16"
+      >
+        <!-- Logo -->
+        <a href="index.html" class="logo flex items-center gap-3">
+          <span class="logo-box"> B </span>
+
+          <span class="logo-text"> BlogHub </span>
         </a>
 
-        <div class="nav-links">
-          <a href="index.html" class="active">Home</a>
-          <a href="explore.html">Explore</a>
+        <!-- Navigation Links -->
+        <div class="nav-links hidden md:flex items-center gap-10">
+          <a href="index.html" class="active"> Home </a>
+
+          <a href="explore.html"> Explore </a>
         </div>
 
-        <div class="nav-actions">
-          <a href="login.html" class="login-btn">Login</a>
-          <a href="register.html" class="register-btn">Register</a>
+        <!-- Login / Register -->
+        <div class="nav-actions flex items-center gap-3">
+          <a href="login.html" class="login-btn"> Login </a>
+
+          <a href="register.html" class="register-btn"> Register </a>
         </div>
       </nav>
     </header>
 
-    <!-- Hero Section -->
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1>Stories worth sharing.</h1>
+    <!-- Page Content -->
+    <main class="page-content"></main>
 
-          <p>
-            BlogHub is a place to share personal experiences, life lessons,
-            reflections, and meaningful stories.
-          </p>
-
-          <form class="hero-search">
-            <input
-              type="text"
-              placeholder="Search stories, authors, topics..."
-            />
-            <button type="submit">Search</button>
-          </form>
-        </div>
-
-        <div class="hero-image">
-          <img src="images/hero/hero.jpg" alt="Mountain landscape" />
-        </div>
-      </section>
-
-     
-      <!-- Featured Stories -->
-    <section class="featured-section">
-
-        <div class="section-heading">
-
-            <div>
-                <span class="section-label">✦ CURATED FOR YOU</span>
-                <h2>Featured Stories</h2>
-            </div>
-
-            <a href="explore.html">View all stories →</a>
-
-        </div>
-
-
-        <div class="story-grid">
-
-            <article class="story-card">
-
-                <img
-                src="images/stories/story1.jpg"
-                alt="Mountain story"
-            >
-
-                <div class="story-content">
-
-                    <span class="story-category">Travel</span>
-
-                    <h3>
-                    The Road Less Traveled: My Solo Trek Through Nepal
-                 </h3>
-
-                    <p>
-                    Sometimes the best stories begin with an unexpected journey.
-                    </p>
-
-                    <a href="story.html" class="read-link">
-                    Read →
-                    </a>
-
-                </div>
-
-         </article>
-
-
-            <article class="story-card">
-
-                <img
-                src="images/stories/story2.jpg"
-                alt="Life lessons story" >
-
-                <div class="story-content">
-
-                    <span class="story-category">Life Lessons</span>
-
-                    <h3>
-                    What Losing My Job Taught Me About Life
-                    </h3>
-
-                    <p>
-                    What felt like an ending eventually became a new beginning.
-                    </p>
-
-                    <a href="story.html" class="read-link">
-                    Read →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <article class="story-card">
-
-                <img
-                src="images/stories/story3.jpg"
-                alt="Food story"
-            >
-
-                <div class="story-content">
-
-                    <span class="story-category">Food & Culture</span>
-
-                    <h3>
-                    Finding Peace in a Bowl of Mom's Dal Bhat
-                    </h3>
-
-                    <p>
-                    Some of our strongest memories are connected to simple food.
-                    </p>
-
-                    <a href="story.html" class="read-link">
-                    Read →
-                 </a>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-    <!-- Story Categories -->
-    <section class="categories-section">
-      <div class="section-label">✦ BROWSE BY TOPIC</div>
-
-      <h2>Story Categories</h2>
-
-      <div class="categories-wrapper">
-        <a href="explore.html?category=travel" class="category-card">
-          <div class="category-icon">✈️</div>
-          <h3>Travel</h3>
-          <p>248 stories</p>
-        </a>
-
-        <a href="explore.html?category=life-lessons" class="category-card">
-          <div class="category-icon">💡</div>
-          <h3>Life Lessons</h3>
-          <p>412 stories</p>
-        </a>
-
-        <a href="explore.html?category=food-culture" class="category-card">
-          <div class="category-icon">🍜</div>
-          <h3>Food & Culture</h3>
-          <p>186 stories</p>
-        </a>
-
-        <a href="explore.html?category=health" class="category-card">
-          <div class="category-icon">🌿</div>
-          <h3>Health</h3>
-          <p>203 stories</p>
-        </a>
-
-        <a href="explore.html?category=career" class="category-card">
-          <div class="category-icon">💼</div>
-          <h3>Career</h3>
-          <p>159 stories</p>
-        </a>
-
-        <a href="explore.html?category=motivation" class="category-card">
-          <div class="category-icon">🔥</div>
-          <h3>Motivation</h3>
-          <p>334 stories</p>
-        </a>
-      </div>
-    </section>
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-grid">
+      <div class="footer-main">
         <div class="footer-brand">
           <div class="footer-logo">
             <span class="logo-box">B</span>
@@ -216,38 +58,13 @@
             A platform where everyday people share personal experiences, life
             lessons, and stories that matter.
           </p>
-
-          <div class="social-links">
-            <a href="#">F</a>
-            <a href="#">T</a>
-            <a href="#">I</a>
-          </div>
         </div>
 
-        <div class="footer-column">
+        <div class="footer-explore">
           <h4>EXPLORE</h4>
 
-          <a href="#">Featured Stories</a>
-          <a href="#categories">Categories</a>
-          <a href="#">Authors</a>
-        </div>
-
-        <div class="footer-column">
-          <h4>COMPANY</h4>
-
-          <a href="#">About Us</a>
-          <a href="#">Contact</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-        </div>
-
-        <div class="footer-column">
-          <h4>SUPPORT</h4>
-
-          <a href="#">Help Center</a>
-          <a href="#">Write for Us</a>
-          <a href="#">Advertise</a>
-          <a href="#">Community</a>
+          <a href="explore.html">Featured Stories</a>
+          <a href="explore.html">Categories</a>
         </div>
       </div>
 

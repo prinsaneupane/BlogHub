@@ -1,3 +1,7 @@
+/* =========================
+   GLOBAL
+========================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,31 +10,27 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #f8f5f1;
+  background-color: #f8f5f1;
   color: #2a211b;
 }
 
+/* =========================
+   NAVBAR
+========================= */
+
 .site-header {
-  background: #ffffff;
+  background-color: #ffffff;
   border-top: 10px solid #21150e;
 }
 
 .navbar {
   min-height: 88px;
-  padding: 0 60px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   border-bottom: 1px solid #eee4dc;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+/* Logo */
 
+.logo {
   text-decoration: none;
   color: #251c17;
 }
@@ -43,8 +43,8 @@ body {
   align-items: center;
   justify-content: center;
 
-  background: #c9783a;
-  color: white;
+  background-color: #c9783a;
+  color: #ffffff;
 
   border-radius: 10px;
 
@@ -59,11 +59,7 @@ body {
   font-weight: bold;
 }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
+/* Navigation Links */
 
 .nav-links a {
   color: #4e4239;
@@ -74,22 +70,24 @@ body {
   padding: 28px 0 12px;
 }
 
+.nav-links a:hover {
+  color: #c9783a;
+}
+
 .nav-links a.active {
   color: #c9783a;
   border-bottom: 2px solid #c9783a;
 }
 
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
+/* Login / Register */
 
 .login-btn,
 .register-btn {
-  text-decoration: none;
   padding: 11px 19px;
+
   border-radius: 10px;
+
+  text-decoration: none;
 
   font-size: 15px;
   font-weight: 600;
@@ -97,94 +95,191 @@ body {
 
 .login-btn {
   color: #56483f;
+
+  background-color: #ffffff;
+
   border: 1px solid #e3d6cc;
-  background: white;
+}
+
+.login-btn:hover {
+  background-color: #f7f1ec;
 }
 
 .register-btn {
-  color: white;
-  background: #c9783a;
+  color: #ffffff;
+
+  background-color: #c9783a;
 }
+
+.register-btn:hover {
+  background-color: #b76830;
+}
+
+/* =========================
+   PAGE CONTENT
+========================= */
+
+.page-content {
+  min-height: 500px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+/* =========================
+   FOOTER
+========================= */
+
+/* =========================
+   FOOTER
+========================= */
 
 .footer {
-  background: #1f140d;
+  background-color: #1f140d;
   color: #cbb9aa;
-  padding: 70px 60px 30px;
+  padding: 55px 30px 25px;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 70px;
+.footer-main {
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 120px;
+
+  text-align: center;
+}
+
+/* Brand */
+
+.footer-brand {
+  max-width: 420px;
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
+
   gap: 12px;
+
+  margin-bottom: 18px;
+
   color: white;
+
   font-family: Georgia, serif;
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.logo-box {
-  background: #c87537;
-  padding: 9px 14px;
-  border-radius: 10px;
 }
 
 .footer-brand p {
-  line-height: 1.7;
-  max-width: 350px;
-}
-
-.social-links {
-  display: flex;
-  gap: 12px;
-  margin-top: 25px;
-}
-
-.social-links a {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #463429;
-  border-radius: 10px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  line-height: 1.8;
+  font-size: 16px;
   color: #cbb9aa;
-  text-decoration: none;
 }
 
-.footer-column {
+/* Explore Links */
+
+.footer-explore {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  align-items: center;
+
+  gap: 15px;
 }
 
-.footer-column h4 {
+.footer-explore h4 {
+  margin-bottom: 5px;
+
   color: #9d8979;
-  font-size: 14px;
-  letter-spacing: 1px;
+
+  font-size: 13px;
+  letter-spacing: 2px;
 }
 
-.footer-column a {
+.footer-explore a {
   color: #cbb9aa;
+
   text-decoration: none;
+
   font-size: 16px;
+
+  transition: 0.2s;
 }
+
+.footer-explore a:hover {
+  color: #c9783a;
+}
+
+/* Bottom */
 
 .footer-bottom {
+  max-width: 1100px;
+
+  margin: 50px auto 0;
+  padding-top: 22px;
+
   border-top: 1px solid #443228;
-  margin-top: 60px;
-  padding-top: 25px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+
+  gap: 80px;
+
+  text-align: center;
 
   color: #75655a;
+
+  font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+
+    gap: 10px;
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    min-height: 75px;
+  }
+
+  .logo-text {
+    font-size: 22px;
+  }
+
+  .logo-box {
+    width: 36px;
+    height: 36px;
+  }
+
+  .login-btn,
+  .register-btn {
+    padding: 9px 13px;
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 50px 25px 25px;
+  }
 }
