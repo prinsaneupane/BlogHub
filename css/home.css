@@ -186,3 +186,108 @@
     max-width: 260px;
   }
 }
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories {
+  background: #F8F5F1;
+  padding: 32px 4.4% 58px;
+}
+
+.category-label {
+  margin: 0 0 18px;
+  color: #C9783A;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.categories h2 {
+  margin: 0 0 51px;
+  color: #21150E;
+  font-family: Georgia, serif;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+/* Six cards */
+
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+
+.category-card {
+  height: 177px;
+
+  background: #FFFFFF;
+  border: 1px solid #E3D6CC;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+}
+
+/* Icon */
+
+.category-icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+/* Category name */
+
+.category-card h3 {
+  margin: 0 0 6px;
+
+  color: #2A211B;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Story count */
+
+.category-card p {
+  margin: 0;
+
+  color: #8B786B;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .categories {
+    padding: 30px 20px 45px;
+  }
+
+  .categories h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .category-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .category-card {
+    height: 160px;
+  }
+
+}
