@@ -7,35 +7,12 @@
   justify-content: center;
 }
 
-.login-container {
-  width: 400px;
-
-  background: #ffffff;
-
-  padding: 40px;
-
-  border-radius: 12px;
-
-  border: 1px solid #eee4dc;
-}
-
 .login-container h1 {
   font-family: Georgia, serif;
-  font-size: 30px;
-
-  text-align: center;
-
-  color: #2a211b;
-
-  margin-bottom: 10px;
 }
 
 .login-container p {
-  text-align: center;
-
   color: #75655a;
-
-  margin-bottom: 25px;
 }
 
 .login-form {
