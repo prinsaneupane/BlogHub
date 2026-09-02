@@ -151,7 +151,7 @@ body {
 
   gap: 120px;
 
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* Brand */
@@ -163,7 +163,7 @@ body {
 .footer-logo {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 
   gap: 12px;
 

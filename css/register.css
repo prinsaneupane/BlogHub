@@ -1,0 +1,208 @@
+/* =========================
+   REGISTER PAGE
+========================= */
+
+.register-page {
+  min-height: 750px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 55px 20px 70px;
+
+  background-color: #f8f5f1;
+}
+
+/* Container */
+
+.register-container {
+  width: 100%;
+  max-width: 550px;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.register-heading {
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.register-heading h1 {
+  margin-bottom: 12px;
+
+  font-family: Georgia, serif;
+
+  font-size: 38px;
+  font-weight: bold;
+
+  color: #251c17;
+}
+
+.register-heading p {
+  color: #8b7a6d;
+
+  font-size: 17px;
+
+  line-height: 1.6;
+}
+
+/* =========================
+   REGISTER CARD
+========================= */
+
+.register-box {
+  background-color: #ffffff;
+
+  padding: 48px 50px 30px;
+
+  border: 1px solid #e4d7cc;
+  border-radius: 22px;
+
+  box-shadow: 0 8px 25px rgba(45, 27, 15, 0.08);
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #5c4b3f;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.form-group label span {
+  color: #c9783a;
+}
+
+.form-group input {
+  width: 100%;
+
+  padding: 15px 17px;
+
+  border: 1px solid #ddcfc3;
+  border-radius: 10px;
+
+  background-color: #fffdfb;
+
+  color: #2a211b;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.form-group input::placeholder {
+  color: #a89d95;
+}
+
+.form-group input:focus {
+  border-color: #c9783a;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 0 0 3px rgba(201, 120, 58, 0.1);
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.register-submit {
+  width: 100%;
+
+  margin-top: 2px;
+
+  padding: 15px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #c9783a;
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.register-submit:hover {
+  background-color: #b76830;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.register-divider {
+  height: 1px;
+
+  margin: 30px 0 25px;
+
+  background-color: #eee4dc;
+}
+
+/* =========================
+   LOGIN LINK
+========================= */
+
+.login-text {
+  text-align: center;
+
+  color: #8a786a;
+
+  font-size: 15px;
+}
+
+.login-text a {
+  color: #c9783a;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+  .register-page {
+    padding: 40px 15px 55px;
+  }
+
+  .register-heading h1 {
+    font-size: 31px;
+  }
+
+  .register-heading p {
+    font-size: 15px;
+  }
+
+  .register-box {
+    padding: 35px 22px 25px;
+  }
+}

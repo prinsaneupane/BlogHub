@@ -1,0 +1,188 @@
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  min-height: 645px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 20px;
+
+  background-color: #f8f1e8;
+
+  border-bottom: 1px solid #eadfd5;
+}
+
+/* Hero Content */
+
+.hero-content {
+  width: 100%;
+  max-width: 750px;
+
+  text-align: center;
+}
+
+/* Small Label */
+
+.hero-label {
+  display: inline-block;
+
+  margin-bottom: 38px;
+
+  padding: 8px 18px;
+
+  border: 1px solid #e5d6ca;
+  border-radius: 30px;
+
+  background-color: #ffffff;
+
+  color: #8c7769;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 1.4px;
+}
+
+/* Main Heading */
+
+.hero h1 {
+  margin-bottom: 30px;
+
+  color: #21160f;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 64px;
+  font-weight: bold;
+
+  line-height: 1.1;
+}
+
+.hero h1 span {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #c9783a;
+
+  font-weight: normal;
+  font-style: normal;
+  font-size: 50px;
+}
+
+/* Description */
+
+.hero-content > p {
+  max-width: 620px;
+
+  margin: 0 auto 48px;
+
+  color: #665449;
+
+  font-size: 20px;
+
+  line-height: 1.7;
+}
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+}
+
+.hero-btn {
+  min-width: 165px;
+
+  padding: 14px 24px;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+/* Explore Button */
+
+.hero-btn-light {
+  background-color: #ffffff;
+
+  color: #2b211b;
+
+  border: 1px solid #e1d4ca;
+}
+
+.hero-btn-light:hover {
+  border-color: #c9783a;
+
+  color: #c9783a;
+}
+
+/* Start Writing Button */
+
+.hero-btn-primary {
+  background-color: #c9783a;
+
+  color: #ffffff;
+
+  border: 1px solid #c9783a;
+}
+
+.hero-btn-primary:hover {
+  background-color: #b76830;
+  border-color: #b76830;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 570px;
+
+    padding: 60px 20px;
+  }
+
+  .hero-label {
+    margin-bottom: 28px;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .hero-content > p {
+    font-size: 17px;
+
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+}
