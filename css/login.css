@@ -1,76 +1,252 @@
+/* =========================
+   LOGIN PAGE
+========================= */
+
 .login-page {
-  min-height: 100vh;
-  background: #f8f5f1;
+  min-height: calc(100vh - 98px);
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding: 70px 20px;
+
+  background-color: #f8f5f1;
 }
 
-.login-container h1 {
+/* =========================
+   LOGIN CONTAINER
+========================= */
+
+.login-container {
+  width: 100%;
+  max-width: 470px;
+}
+
+/* =========================
+   LOGIN BOX
+========================= */
+
+.login-box {
+  background-color: #ffffff;
+
+  padding: 45px 40px;
+
+  border: 1px solid #e6dacf;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(45, 27, 15, 0.06);
+}
+
+/* =========================
+   LOGIN HEADING
+========================= */
+
+.login-heading {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.login-label {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #c9783a;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+}
+
+.login-heading h1 {
+  margin-bottom: 12px;
+
   font-family: Georgia, serif;
+
+  font-size: 36px;
+  font-weight: bold;
+
+  color: #251c17;
 }
 
-.login-container p {
+.login-heading p {
+  max-width: 380px;
+
+  margin: 0 auto;
+
   color: #75655a;
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.login-form label {
-  color: #4e4239;
 
   font-size: 15px;
+
+  line-height: 1.6;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #4e4239;
+
+  font-size: 14px;
   font-weight: 600;
 }
 
-.login-form input {
-  padding: 12px;
+.form-group input {
+  width: 100%;
 
-  border: 1px solid #e3d6cc;
-  border-radius: 8px;
+  padding: 13px 14px;
+
+  border: 1px solid #dfd2c8;
+  border-radius: 9px;
+
+  background-color: #fffdfb;
+
+  color: #2a211b;
 
   font-size: 15px;
+
+  outline: none;
+
+  transition: 0.2s;
 }
 
-.login-form input:focus {
-  outline: none;
-  border-color: #c9783a;
+.form-group input::placeholder {
+  color: #a99b90;
 }
+
+.form-group input:focus {
+  border-color: #c9783a;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 0 0 3px rgba(201, 120, 58, 0.1);
+}
+
+/* =========================
+   OPTIONS
+========================= */
+
+.login-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+
+  font-size: 13px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #6c5a4f;
+}
+
+.remember-me input {
+  accent-color: #c9783a;
+}
+
+.login-options a {
+  color: #c9783a;
+
+  text-decoration: none;
+
+  font-weight: 500;
+}
+
+.login-options a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   LOGIN BUTTON
+========================= */
 
 .login-submit {
-  margin-top: 10px;
+  width: 100%;
 
-  padding: 12px;
+  padding: 14px;
 
   border: none;
-  border-radius: 8px;
+  border-radius: 9px;
 
-  background: #c9783a;
+  background-color: #c9783a;
   color: white;
 
   font-size: 15px;
   font-weight: 600;
 
   cursor: pointer;
+
+  transition: 0.2s;
 }
 
-.login-register {
+.login-submit:hover {
+  background-color: #b76830;
+}
+
+/* =========================
+   REGISTER LINK
+========================= */
+
+.register-text {
+  margin-top: 25px;
+
   text-align: center;
 
-  margin-top: 20px;
-
   color: #75655a;
+
+  font-size: 14px;
 }
 
-.login-register a {
+.register-text a {
   color: #c9783a;
 
   text-decoration: none;
 
   font-weight: 600;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+  .login-page {
+    padding: 45px 15px;
+  }
+
+  .login-box {
+    padding: 32px 22px;
+  }
+
+  .login-heading h1 {
+    font-size: 30px;
+  }
+
+  .login-options {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 12px;
+  }
 }
