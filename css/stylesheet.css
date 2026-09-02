@@ -1,7 +1,4 @@
-/* =========================
-   GLOBAL
-========================= */
-
+/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +11,7 @@ body {
   color: #2a211b;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* Navbar */
 
 .site-header {
   background-color: #ffffff;
@@ -38,16 +33,12 @@ body {
 .logo-box {
   width: 40px;
   height: 40px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-color: #c9783a;
   color: #ffffff;
-
   border-radius: 10px;
-
   font-family: Georgia, serif;
   font-size: 20px;
   font-weight: bold;
@@ -64,9 +55,7 @@ body {
 .nav-links a {
   color: #4e4239;
   text-decoration: none;
-
   font-size: 17px;
-
   padding: 28px 0 12px;
 }
 
@@ -84,20 +73,15 @@ body {
 .login-btn,
 .register-btn {
   padding: 11px 19px;
-
   border-radius: 10px;
-
   text-decoration: none;
-
   font-size: 15px;
   font-weight: 600;
 }
 
 .login-btn {
   color: #56483f;
-
   background-color: #ffffff;
-
   border: 1px solid #e3d6cc;
 }
 
@@ -107,7 +91,6 @@ body {
 
 .register-btn {
   color: #ffffff;
-
   background-color: #c9783a;
 }
 
@@ -115,22 +98,17 @@ body {
   background-color: #b76830;
 }
 
-/* =========================
-   PAGE CONTENT
-========================= */
+/* Hero Section */
 
 .page-content {
   min-height: 500px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* Footer */
 
 .footer {
   background-color: #1f140d;
   color: #cbb9aa;
-
   padding: 55px 60px 25px;
 }
 
@@ -138,13 +116,9 @@ body {
 
 .footer-main {
   display: grid;
-
   grid-template-columns: 2fr 1fr 1fr;
-
   gap: 80px;
-
   max-width: 1200px;
-
   margin: 0 auto;
 }
 
@@ -157,13 +131,9 @@ body {
 .footer-logo {
   display: flex;
   align-items: center;
-
   gap: 12px;
-
   margin-bottom: 18px;
-
   color: #ffffff;
-
   font-family: Georgia, serif;
   font-size: 28px;
   font-weight: bold;
@@ -171,9 +141,7 @@ body {
 
 .footer-brand p {
   color: #cbb9aa;
-
   font-size: 16px;
-
   line-height: 1.8;
 }
 
@@ -182,30 +150,22 @@ body {
 .footer-links {
   display: flex;
   flex-direction: column;
-
   align-items: flex-start;
-
   gap: 14px;
 }
 
 .footer-links h4 {
   margin-bottom: 5px;
-
   color: #9d8979;
-
   font-size: 13px;
   font-weight: 600;
-
   letter-spacing: 2px;
 }
 
 .footer-links a {
   color: #cbb9aa;
-
   text-decoration: none;
-
   font-size: 16px;
-
   transition: 0.2s;
 }
 
@@ -217,19 +177,13 @@ body {
 
 .footer-bottom {
   max-width: 1200px;
-
   margin: 45px auto 0;
-
   padding-top: 22px;
-
   border-top: 1px solid #443228;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   color: #75655a;
-
   font-size: 14px;
 }
 
@@ -242,20 +196,16 @@ body {
 
   .footer-main {
     grid-template-columns: 1fr;
-
     gap: 35px;
   }
 
   .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
-
     gap: 8px;
   }
 }
-/* =========================
-   RESPONSIVE
-========================= */
+/* Responsive */
 
 @media (max-width: 768px) {
   .navbar {
